@@ -14,15 +14,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div>
-      <div name='nav' className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#ecf2fb] text-gray-300">
+      <div name='navbar' className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb]" >
         <div>
           {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
           {/* <img src={kaihuan} alt="Logo Image" style={{ width: "64px" }} /> */}
         </div>
     
       {/* menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li> 
           <Link to="home" smooth={true} duration={500}>
             Home
@@ -48,7 +47,6 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-     
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
@@ -83,32 +81,31 @@ const Navbar = () => {
       <div className="flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300'>
-            <a  className='flex justify-between items-center w-full text-gray-400' href="/">
+            <a  className='flex justify-between items-center w-full text-gray-600' href="https://www.linkedin.com/in/kaihuan-huang-3775a823a/">
                Linkedin <FaLinkedin size={30}/>
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 '>
-            <a className='flex justify-between items-center w-full text-gray-300'
-            href="/">
+            <a className='flex justify-between items-center w-full text-gray-400'
+            href="https://github.com/kaihuan-huang">
               Github <FaGithub size={30}/>
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300'>
-            <a className='flex justify-between items-center w-full text-gray-400'
+            <a className='flex justify-between items-center w-full text-gray-600'
             href="/">
               Resume <BsFillPersonLinesFill size={30}/>
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300'>
-            <a className='flex justify-between items-center w-full text-gray-300'
-            href="/">
+            <a className='flex justify-between items-center w-full text-gray-400'
+            href="mailto:huangkaihuan0216@gmail.com">
               Email <HiOutlineMail size={30}/>
             </a>
           </li>
         </ul>
         </div>
       </div>
-    </div>
   );
 };
 

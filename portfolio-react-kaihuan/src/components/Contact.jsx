@@ -12,10 +12,10 @@ const Contact = () => {
             </div>
             </div>
                 <form  action="https://getform.io/f/1c0e4abb-a618-4077-b6a2-37a87fff03ba" method="POST" className='flex flex-col max-w-[700px] w-full'>
-                <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
-                <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-                <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message'></textarea> 
-                <button  className='text-pink-600 group border-2 px-6 py-3 hover:text-[#cab0e9]'>
+                <input className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' type="text" placeholder='Name' name='name' />
+                <input className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' type="email" placeholder='name@company.com' name='email' required/>
+                <textarea className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' name="message" rows="10" placeholder='Your message...'></textarea> 
+                <button  className='text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2'>
                 Submit!
                </button> 
                 </form>
