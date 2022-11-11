@@ -1,8 +1,8 @@
 import Wavebreak from '../assets/projects/Wavebreak.jpeg'
-import CodeApedia from '../assets/projects/Code-a-pedia.jpg'
+import CodeApedia from '../assets/projects/CodeApedia.jpg'
 import TechOPedia from '../assets/projects/TechOPedia'
 
-export const data=[
+export const Data=[
     {
         id:1,
         name:"Code-a-pedia",
