@@ -1,8 +1,11 @@
 import React from "react";
+import {Link} from 'react-scroll' 
+import kaihuan from '../assets/kaihuan.png'
 
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen ">
+    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       {/* Container */}
       <div className="max-w-[700px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-pink-600">Hi, I am</p>
@@ -18,9 +21,14 @@ const Home = () => {
           I have worked at the $30B electric car company NIO and LG in various functions such as intern and marketing.
          
         </p>
+        {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+        <img src={kaihuan} alt="Logo Image" style={{ width: "100px" }} />
         <div>
             <button className='text-pink-600 group border-2 px-6 py-3 my-2 flex items-center hover:text-[#cab0e9]'>
+              <Link to="projects" smooth={true} duration={500}>
                 View Projects  
+              </Link>
+               
             </button>
           </div>
       </div>

@@ -8,7 +8,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import {Link} from 'react-scroll' //https://www.npmjs.com/package/react-scroll
-// import Logo from "../assets/logo.png";
+// import kaihuan from '../assets/kaihuan.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
       <div name='nav' className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#ecf2fb] text-gray-300">
         <div>
           {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-          {/* <img src={Logo} alt="Logo Image" style={{ width: "100px" }} /> */}
+          {/* <img src={kaihuan} alt="Logo Image" style={{ width: "64px" }} /> */}
         </div>
     
       {/* menu */}
