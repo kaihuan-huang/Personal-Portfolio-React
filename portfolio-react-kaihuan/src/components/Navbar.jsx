@@ -78,7 +78,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Social icons */}
-      <div className="flex fixed flex-col top-[35%] left-0">
+      <div className="flex fixed flex-col top-[35%] left-0 invisible lg:visible">
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300'>
             <a  className='flex justify-between items-center w-full text-gray-600' href="https://www.linkedin.com/in/kaihuan-huang-3775a823a/">
@@ -104,7 +104,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        </div>
+      </div>
       </div>
   );
 };

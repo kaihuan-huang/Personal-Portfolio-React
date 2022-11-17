@@ -21,12 +21,23 @@
   background-size: cover;
   background-position: center;
   height: 250px;
+  position: relative;
 }
+
+
+/* .projects div {
+  background-color: rgba(248, 247, 216, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 .projects:hover {
   background-image: linear-gradient(
       to right,
-      rgba(112, 157, 255, 0.8),
-      hsla(242, 74%, 61%, 0.8)   
+      rgba(112, 157, 255, 0.5),
+      hsla(242, 74%, 61%, 0.5)   
   )!important;
 }
