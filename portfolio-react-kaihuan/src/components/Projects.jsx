@@ -1,8 +1,11 @@
 import React from "react";
 // import { Data } from "../Data/projectData.js";
-import Wavebreak from "../assets/projects/Wavebreak.png";
-import CodeApedia from "../assets/projects/CodeApedia.png";
-import TechOPedia from "../assets/projects/TechOPedia.png";
+import Wavebreak from "../assets/projects/wave.jpg";
+import CodeApedia from "../assets/projects/code.jpg";
+import TechOPedia from "../assets/projects/techblog.jpg";
+import JsQuiz from "../assets/projects/quiz.jpg";
+import WeatherDashboard from "../assets/projects/weather.jpg";
+import WorkDayScheduler from "../assets/projects/calender.jpg";
 
 const Projects = () => {
   // const project = Data;
@@ -84,7 +87,7 @@ const Projects = () => {
 
             {/* Grid item */}
             <div
-              style={{ backgroundImage: `url(${CodeApedia})` }}
+              style={{ backgroundImage: `url(${JsQuiz })` }}
               className="group container rounded-md 
               flex justify-center text-center items-center mx-auto projects "
             >
@@ -146,37 +149,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Grid item */}
-            <div
-              style={{ backgroundImage: `url(${CodeApedia})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                  Code-a-pedia
-                </span>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/wavebreak">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+            
 
             {/* Grid item */}
             <div
@@ -209,6 +182,72 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+
+             {/* Grid item */}
+             <div
+              style={{ backgroundImage: `url(${WeatherDashboard})` }}
+              className="group container rounded-md 
+              flex justify-center text-center items-center mx-auto projects "
+            >
+              {/* Hover effect for images */}
+              <div className="opacity-0 group-hover:opacity-100 ">
+                <span className="text-2xl font bold text-white tracking-wider ">
+                  Code-a-pedia
+                </span>
+                <div className="pt-8 text-center">
+                  <a href="https://github.com/kaihuan-huang/wavebreak">
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                    >
+                      Github
+                    </button>
+                  </a>
+                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                    >
+                      live
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+             {/* Grid item */}
+             <div
+              style={{ backgroundImage: `url(${WorkDayScheduler})` }}
+              className="group container rounded-md 
+              flex justify-center text-center items-center mx-auto projects "
+            >
+              {/* Hover effect for images */}
+              <div className="opacity-0 group-hover:opacity-100 ">
+                <span className="text-2xl font bold text-white tracking-wider ">
+                  Code-a-pedia
+                </span>
+                <div className="pt-8 text-center">
+                  <a href="https://github.com/kaihuan-huang/wavebreak">
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                    >
+                      Github
+                    </button>
+                  </a>
+                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
+                    <button
+                      className="text-center rounded-lg px-4 py-3 m-2
+                       bg-white text-gray-700 font-bold text-lg"
+                    >
+                      live
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
