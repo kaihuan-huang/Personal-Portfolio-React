@@ -11,9 +11,9 @@
 * [Questions](#questions)
 
 ## Description
-This is a single-page application portfolio for a web developer
+This is a single-page application portfolio for a web developer containing a header, a section for content, and a footer.
 
-- Deployed link: https://github.com/kaihuan-huang/Social-Network-API---NoSQL-MongoDB-database
+- Deployed link: https://github.com/kaihuan-huang/Personal-Portfolio-React
 
 
 ## More details
@@ -53,8 +53,11 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 The following images demonstrate the web application's appearance and functionality in Insomnia:
 
-![insomnia](images/example.png)
-![insomnia](images/example.png)
+![portfolio-react-kaihuan](portfolio-react-kaihuan/src/assets/ReadmePics/1.png)
+![portfolio-react-kaihuan](portfolio-react-kaihuan/src/assets/ReadmePics/2.png)
+![portfolio-react-kaihuan](portfolio-react-kaihuan/src/assets/ReadmePics/3.png)
+![portfolio-react-kaihuan](portfolio-react-kaihuan/src/assets/ReadmePics/4.png)
+![portfolio-react-kaihuan](portfolio-react-kaihuan/src/assets/ReadmePics/5.png)
 
 
 
@@ -62,11 +65,6 @@ The following images demonstrate the web application's appearance and functional
 The user should clone the repository from GitHub and download Node. 
 Run `npm install ` to install.
 Run `npm start ` to start.
-
-## Usage 
-Use inquirer from your command line to answer questions about your project.
-View walk through video here - [Social-Network-API](https://drive.google.com/file/d/1zeQ3AUeuJwaU9InUIp6IfpriZZGwY-zE/view)<br>
-
 
 ## Contributing 
 Contributors should read the installation section. 
@@ -76,6 +74,7 @@ Contributors should read the installation section.
 ```
   React
   GitHub Pages
+  Tailwind CSS
 
 ```
 ## Questions
