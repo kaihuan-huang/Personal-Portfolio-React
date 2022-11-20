@@ -70,7 +70,7 @@ const Projects = () => {
                 </span>
                 <p>A knowledge wiki for coding terms/definitions/slangs to user in coding related background</p>
                 <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/wavebreak">
+                  <a href="https://github.com/pjsherpa/Code-a-pedia">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -78,7 +78,7 @@ const Projects = () => {
                       Github
                     </button>
                   </a>
-                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
+                  <a href="https://codeapedia.herokuapp.com/">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -134,6 +134,7 @@ const Projects = () => {
                 <span className="text-2xl font bold text-white tracking-wider ">
                 Password Generator
                 </span>
+                <p>Will generate a random password based on your selected criteria.</p>
                 <div className="pt-8 text-center">
                   <a href="https://github.com/kaihuan-huang/Password_Generator">
                     <button
@@ -168,6 +169,7 @@ const Projects = () => {
                 <span className="text-2xl font bold text-white tracking-wider ">
                   Tech-O-Pedia
                 </span>
+                <p>CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.</p>
                 <div className="pt-8 text-center">
                   <a href="https://github.com/kaihuan-huang/Tech-Blog">
                     <button
@@ -202,7 +204,7 @@ const Projects = () => {
                 </span>
                 <p>A Weather Dashboard application allows a user to see the weather outlook for multiple cities.</p>
                 <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/Weather_Dashboard_App">
+                  <a href=" https://github.com/kaihuan-huang/Weather_Dashboard_App">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -210,7 +212,7 @@ const Projects = () => {
                       Github
                     </button>
                   </a>
-                  <a href="https://kaihuan-huang.github.io/Weather_Dashboard_App/">
+                  <a href=" https://kaihuan-huang.github.io/Weather_Dashboard_App/">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
