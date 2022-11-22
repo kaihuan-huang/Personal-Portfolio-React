@@ -14,6 +14,7 @@
 This is a single-page application portfolio for a web developer containing a header, a section for content, and a footer.
 
 - Deployed link: https://github.com/kaihuan-huang/Personal-Portfolio-React
+- Live: https://kaihuan-huang.github.io/Personal-Portfolio-React
 
 
 ## More details
