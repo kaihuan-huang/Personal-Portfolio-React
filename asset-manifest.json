@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio-React/static/css/main.30364709.css",
+    "main.js": "/Personal-Portfolio-React/static/js/main.b2c07bd6.js",
+    "static/media/wave.jpg": "/Personal-Portfolio-React/static/media/wave.b9d0020155c0ac1eaabb.jpg",
+    "static/media/code.jpg": "/Personal-Portfolio-React/static/media/code.d195a3c6436e5ad8f2e6.jpg",
+    "static/media/weather.jpg": "/Personal-Portfolio-React/static/media/weather.6d1b0ea61e8033a5d565.jpg",
+    "static/media/kaihuan.png": "/Personal-Portfolio-React/static/media/kaihuan.674081179afc61f37930.png",
+    "static/media/eCommerce.png": "/Personal-Portfolio-React/static/media/eCommerce.b40cac2de08fb410bc42.png",
+    "static/media/quiz.jpg": "/Personal-Portfolio-React/static/media/quiz.f07085a565b4a5a8dec1.jpg",
+    "static/media/techblog.jpg": "/Personal-Portfolio-React/static/media/techblog.00fb6f36eb98156a9cf7.jpg",
+    "static/media/textEditorPWA.jpg": "/Personal-Portfolio-React/static/media/textEditorPWA.6cc49c90b5f23efa1e4f.jpg",
+    "static/media/calender.jpg": "/Personal-Portfolio-React/static/media/calender.943137c65529f7106f0d.jpg",
+    "static/media/password.jpg": "/Personal-Portfolio-React/static/media/password.3389d13466ce23102e01.jpg",
+    "static/media/react.png": "/Personal-Portfolio-React/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/node.png": "/Personal-Portfolio-React/static/media/node.952a9ea986dcfa5229ad.png",
+    "static/media/mongo.png": "/Personal-Portfolio-React/static/media/mongo.2a1528ddc31d4ce8518d.png",
+    "static/media/jquery.png": "/Personal-Portfolio-React/static/media/jquery.0ce0c046113a3f4a73bc.png",
+    "static/media/github.png": "/Personal-Portfolio-React/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/Personal-Portfolio-React/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/bootstrap.png": "/Personal-Portfolio-React/static/media/bootstrap.2800bb3ed6b40097a8d7.png",
+    "static/media/tailwind.png": "/Personal-Portfolio-React/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/Personal-Portfolio-React/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/Personal-Portfolio-React/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/Personal-Portfolio-React/index.html",
+    "main.30364709.css.map": "/Personal-Portfolio-React/static/css/main.30364709.css.map",
+    "main.b2c07bd6.js.map": "/Personal-Portfolio-React/static/js/main.b2c07bd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30364709.css",
+    "static/js/main.b2c07bd6.js"
+  ]
+}
