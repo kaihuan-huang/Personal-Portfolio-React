@@ -73,13 +73,15 @@ Contributors should read the installation section.
 ## Technologies used
 
 ```
-  React
+  React.js
   GitHub Pages
   Tailwind CSS
 
 ```
 ## Questions
-If you have any questions about this projects, please contact me directly at huangkaihuan0216@gmail.com. You can view more of my projects at https://github.com/kaihuan-huang.
+If you have any questions about this projects, please contact me directly at huangkaihuan0216@gmail.com.
+ You can view more of my projects at https://github.com/kaihuan-huang.
+
 
 ## Made by 
 ```
