@@ -7,22 +7,16 @@ const About = () => {
         <div className='max-w-[px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
             <p className='text-4xl font-bold inline text-pink-600'>
-            Software Engineer
+            
             </p>
           </div>
           </div>
           <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             <div className='sm:text-right text-4xl font-bold'>
-              <p>I believe this is the best path for my skills and
-          interests</p>
+              <p> </p>
             </div>
             <div>
-              <p>A few years ago, I moved to
-          the United States to pursue new opportunities and improve my English
-          and Spanish skills. After moving to Silicon Valley and meeting many
-          brilliant people here, I decided that I want to pursue a career as a
-          software engineer. I have always enjoyed math and loved learning about
-          future technologies. </p>  
+              <p></p>  
             </div>
           </div>
       </div>

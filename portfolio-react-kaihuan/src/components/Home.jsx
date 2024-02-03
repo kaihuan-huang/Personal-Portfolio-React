@@ -13,12 +13,10 @@ const Home = () => {
           Kaihuan Huang
         </h1>
         <h2 className="text-2xl sm:text-2xl  text-[#8892b0]">
-          An MSc candidate in Computer Science with Artificial
-          Intelligence at the University of York & Full Stack Web Development at the UC Berkeley
-          Extension.
+          
         </h2>
         <p className="text-[#675b6c] py-4 max-w-[500px]">
-          I have worked at the $30B electric car company NIO and LG in various functions such as intern and marketing.
+         
          
         </p>
         {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
