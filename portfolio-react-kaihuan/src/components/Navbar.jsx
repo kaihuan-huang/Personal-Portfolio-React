@@ -1,49 +1,53 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { FaTimes } from 'react-icons/fa';
-import { BsSun, BsMoon } from 'react-icons/bs';
+
+import React, { useState } from 'react';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
-const Navbar = ({ theme, toggleTheme }) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
-
   const handleClick = () => setNav(!nav);
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       <div>
-          <h1 className='text-3xl font-bold text-pink-600'>KH</h1>
+        <h1 className='text-3xl font-bold text-pink-600'>KH</h1>
       </div>
 
       {/* menu */}
       <ul className='hidden md:flex'>
-        <li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
           <Link to='skills' smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
+          <Link to='work' smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
           <Link to='experience' smooth={true} duration={500}>
             Experience
           </Link>
         </li>
-        <li>
-          <Link to='projects' smooth={true} duration={500}>
-            Projects
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
+          <Link to='resume' smooth={true} duration={500}>
+            Resume
           </Link>
         </li>
-        <li>
+        <li className='hover:text-pink-600 px-4 cursor-pointer font-medium'>
           <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
@@ -51,7 +55,7 @@ const Navbar = ({ theme, toggleTheme }) => {
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -79,13 +83,18 @@ const Navbar = ({ theme, toggleTheme }) => {
           </Link>
         </li>
         <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
           <Link onClick={handleClick} to='experience' smooth={true} duration={500}>
             Experience
           </Link>
         </li>
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
-            Projects
+          <Link onClick={handleClick} to='resume' smooth={true} duration={500}>
+            Resume
           </Link>
         </li>
         <li className='py-6 text-4xl'>
@@ -101,7 +110,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/huangkaihuan/'
+              href='https://www.linkedin.com'
               target="_blank"
               rel="noreferrer"
             >
