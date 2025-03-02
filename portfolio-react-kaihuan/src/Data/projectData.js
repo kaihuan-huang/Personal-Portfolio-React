@@ -1,110 +1,150 @@
 
-// Using WeatherDashboard image for Wavebreak since the file seems to be missing
-import Wavebreak from '../assets/projects/weather.jpg'
-import CodeApedia from '../assets/projects/CodeApedia.png'
-import TechOPedia from '../assets/projects/TechOPedia.png'
-import JsQuiz from '../assets/projects/quiz.jpg'
-import PasswordGenerator from '../assets/projects/password.jpg'
-import WeatherDashboard from '../assets/projects/weather.jpg'
-
 export const Data = [
-    {
-        id: 1,
-        name: "Code-a-pedia",
-        description: "A comprehensive coding resource platform for developers of all skill levels",
-        image: CodeApedia,
-        github: "https://github.com/kaihuan-huang/Code-a-pedia",
-        live: "https://codeapedia.herokuapp.com/",
-        technologies: ["JavaScript", "Node.js", "Express", "MySQL", "Handlebars"],
-        featured: true,
-        category: "Full Stack"
-    },
-    {
-        id: 2,
-        name: "Wavebreak Application",
-        description: "An interactive Beach Dashboard application that allows users to search for nearby beaches in California",
-        image: Wavebreak,
-        github: "https://github.com/kaihuan-huang/wavebreak",
-        live: "",
-        technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
-        featured: false,
-        category: "Frontend"
-    },
-    {
-        id: 3,
-        name: "Tech-O-Pedia",
-        description: "A tech blog platform allowing users to share and discuss the latest in technology",
-        image: TechOPedia,
-        github: "https://github.com/kaihuan-huang/Tech-Blog",
-        live: "https://stormy-anchorage-90135.herokuapp.com/posts",
-        technologies: ["Node.js", "Express", "MySQL", "MVC Pattern"],
-        featured: true,
-        category: "Full Stack"
-    },
-    {
-        id: 4,
-        name: "JavaScript Quiz",
-        description: "An interactive quiz testing JavaScript knowledge with a timer and high score tracking",
-        image: JsQuiz,
-        github: "https://github.com/kaihuan-huang",
-        live: "",
-        technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
-        featured: false,
-        category: "Frontend"
-    },
-    {
-        id: 5,
-        name: "Password Generator",
-        description: "An application that generates secure random passwords based on user-selected criteria",
-        image: PasswordGenerator,
-        github: "https://github.com/kaihuan-huang",
-        live: "",
-        technologies: ["JavaScript", "CSS", "HTML"],
-        featured: false,
-        category: "Frontend"
-    },
-    {
-        id: 6,
-        name: "Weather Dashboard",
-        description: "A weather application that displays current and forecast weather data for cities worldwide",
-        image: WeatherDashboard,
-        github: "https://github.com/kaihuan-huang",
-        live: "",
-        technologies: ["JavaScript", "OpenWeather API", "Bootstrap", "Local Storage"],
-        featured: false,
-        category: "Frontend"
-    },
-    {
-        id: 7,
-        name: "E-Commerce Backend",
-        description: "A robust RESTful API backend for e-commerce applications with product, category, and tag management",
-        image: WeatherDashboard,
-        github: "https://github.com/kaihuan-huang/E-Commerce-Back-End",
-        live: "",
-        technologies: ["Node.js", "Express", "Sequelize", "MySQL"],
-        featured: true,
-        category: "Backend"
-    },
-    {
-        id: 8,
-        name: "Team Profile Generator",
-        description: "A command-line application that generates an HTML webpage displaying summaries for each team member",
-        image: PasswordGenerator,
-        github: "https://github.com/kaihuan-huang/Team-Profile-Generator",
-        live: "",
-        technologies: ["Node.js", "Jest", "Inquirer", "OOP"],
-        featured: false,
-        category: "Backend"
-    },
-    {
-        id: 9,
-        name: "Social Network API",
-        description: "A MongoDB-based API for a social network application with user, thought, and reaction models",
-        image: TechOPedia,
-        github: "https://github.com/kaihuan-huang/Social-Network-API",
-        live: "",
-        technologies: ["MongoDB", "Mongoose", "Express", "Node.js"],
-        featured: true,
-        category: "Backend"
-    }
-]
+  {
+    id: 1,
+    name: "E-Commerce Platform",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/ecommerce-platform",
+    live: "https://ecommerce-demo.yourdomain.com",
+    category: "fullstack",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT", "Stripe API"]
+  },
+  {
+    id: 2,
+    name: "AI-Powered Task Manager",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/ai-task-manager",
+    live: "https://ai-tasks.yourdomain.com",
+    category: "ai",
+    tech: ["Python", "TensorFlow", "React", "FastAPI", "SQLite", "Natural Language Processing"]
+  },
+  {
+    id: 3,
+    name: "Real-Time Chat Application",
+    image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/real-time-chat",
+    live: "https://chat.yourdomain.com",
+    category: "fullstack",
+    tech: ["React", "Socket.io", "Express", "MongoDB", "JWT"]
+  },
+  {
+    id: 4,
+    name: "Personal Finance Dashboard",
+    image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/finance-dashboard",
+    live: "https://finance.yourdomain.com",
+    category: "frontend",
+    tech: ["React", "D3.js", "Tailwind CSS", "RESTful APIs"]
+  },
+  {
+    id: 5,
+    name: "Health Monitoring IoT System",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/health-iot",
+    live: "https://health-iot.yourdomain.com",
+    category: "iot",
+    tech: ["Python", "Raspberry Pi", "MQTT", "React", "MongoDB", "Time Series DB"]
+  },
+  {
+    id: 6,
+    name: "Social Media Analytics Tool",
+    image: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/social-analytics",
+    live: "https://social-analytics.yourdomain.com",
+    category: "data",
+    tech: ["Python", "React", "Flask", "PostgreSQL", "Redis", "Machine Learning", "Twitter API"]
+  },
+  {
+    id: 7,
+    name: "E-Commerce Backend",
+    image: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/ecommerce-backend",
+    live: null,
+    category: "backend",
+    tech: ["Node.js", "Express", "Sequelize", "MySQL"]
+  },
+  {
+    id: 8,
+    name: "Weather Forecast Mobile App",
+    image: "https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+    github: "https://github.com/yourusername/weather-app",
+    live: "https://weather.yourdomain.com",
+    category: "mobile",
+    tech: ["React Native", "Expo", "Weather API", "Geolocation", "Styled Components"]
+  },
+  {
+    id: 9,
+    name: "AI Image Generation Platform",
+    image: "https://images.unsplash.com/photo-1675271591211-930246f21513?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/ai-image-generator",
+    live: "https://ai-images.yourdomain.com",
+    category: "ai",
+    tech: ["Python", "TensorFlow", "GANs", "Flask", "React", "AWS S3"]
+  },
+  {
+    id: 10,
+    name: "Blockchain Voting System",
+    image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+    github: "https://github.com/yourusername/blockchain-voting",
+    live: "https://blockchain-vote.yourdomain.com",
+    category: "blockchain",
+    tech: ["Solidity", "Ethereum", "React", "Web3.js", "Truffle", "Metamask"]
+  },
+  {
+    id: 11,
+    name: "Fitness Tracking Dashboard",
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    github: "https://github.com/yourusername/fitness-tracker",
+    live: "https://fitness.yourdomain.com",
+    category: "fullstack",
+    tech: ["React", "Node.js", "MongoDB", "Chart.js", "PWA", "Push Notifications"]
+  },
+  {
+    id: 12,
+    name: "Recipe Recommendation Engine",
+    image: "https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80",
+    github: "https://github.com/yourusername/recipe-recommender",
+    live: "https://recipes.yourdomain.com",
+    category: "ai",
+    tech: ["Python", "Django", "PostgreSQL", "Machine Learning", "React", "Recommendation Algorithms"]
+  }
+];
+
+export const categories = [
+  {
+    id: "all",
+    name: "All Projects"
+  },
+  {
+    id: "frontend",
+    name: "Frontend"
+  },
+  {
+    id: "backend",
+    name: "Backend"
+  },
+  {
+    id: "fullstack",
+    name: "Full Stack"
+  },
+  {
+    id: "mobile",
+    name: "Mobile"
+  },
+  {
+    id: "ai",
+    name: "AI & Machine Learning"
+  },
+  {
+    id: "blockchain",
+    name: "Blockchain"
+  },
+  {
+    id: "iot",
+    name: "IoT"
+  },
+  {
+    id: "data",
+    name: "Data Science"
+  }
+];

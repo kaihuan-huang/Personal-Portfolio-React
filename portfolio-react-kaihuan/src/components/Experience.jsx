@@ -34,7 +34,7 @@ const Experience = () => {
                 <h4 className="text-lg font-semibold text-white mb-2">Key Responsibilities:</h4>
                 <ul className="list-disc list-inside text-gray-300 space-y-1">
                   {job.responsibilities.map((responsibility, index) => (
-                    <li key={index}>{responsibility}</li>
+                    <li key={`resp-${job.id}-${index}`}>{responsibility}</li>
                   ))}
                 </ul>
               </div>
@@ -42,7 +42,7 @@ const Experience = () => {
               <div className="flex flex-wrap gap-2">
                 {job.technologies.map((tech, index) => (
                   <span 
-                    key={index} 
+                    key={`tech-${job.id}-${index}`} 
                     className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded"
                   >
                     {tech}
