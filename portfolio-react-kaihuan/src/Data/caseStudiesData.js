@@ -2,85 +2,7 @@
 // Case studies data for featured projects
 export const CaseStudiesData = [
   {
-    id: 1, // E-Commerce Platform
-    title: "E-Commerce Platform",
-    overview: "A scalable e-commerce platform with product catalog, shopping cart, user accounts, payments integration, and order management.",
-    challenges: [
-      "Building a scalable architecture that can handle traffic spikes during sales",
-      "Implementing secure payment processing with multiple providers",
-      "Creating a responsive design that works across all devices",
-      "Optimizing database queries for fast product searches and filters"
-    ],
-    solutions: [
-      "Developed a microservices architecture with separate services for products, orders, and users",
-      "Integrated with Stripe and PayPal with a unified payment abstraction layer",
-      "Used React with Tailwind CSS for a fully responsive design system",
-      "Implemented database indexing and caching strategies for performance"
-    ],
-    outcomes: [
-      "Platform supports thousands of concurrent users with 99.9% uptime",
-      "Increased conversion rate by 35% through optimized checkout flow",
-      "Reduced page load times by 60% through code splitting and lazy loading",
-      "Successfully processed over $50,000 in transactions during testing phase"
-    ],
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT", "Stripe API"],
-    duration: "4 months",
-    role: "Full Stack Developer"
-  },
-  {
-    id: 2, // AI-Powered Task Manager
-    title: "AI-Powered Task Manager",
-    overview: "An intelligent task management application that uses natural language processing to categorize, prioritize, and set deadlines for tasks.",
-    challenges: [
-      "Developing an accurate natural language understanding model for task analysis",
-      "Creating an intuitive UI that doesn't overwhelm users with AI features",
-      "Ensuring real-time updates across multiple devices",
-      "Balancing server processing with client-side capabilities"
-    ],
-    solutions: [
-      "Trained a custom NLP model on task-specific datasets using TensorFlow",
-      "Implemented a clean, minimal UI with progressive disclosure of advanced features",
-      "Used WebSockets for real-time synchronization across devices",
-      "Optimized the application with a hybrid approach of server and client processing"
-    ],
-    outcomes: [
-      "Achieved 87% accuracy in task categorization and priority assignment",
-      "Reduced time spent on task organization by 40% according to user feedback",
-      "Application maintains sub-200ms response times even with complex analysis",
-      "Featured in ProductHunt with over 500 upvotes"
-    ],
-    technologies: ["Python", "TensorFlow", "React", "FastAPI", "SQLite", "Natural Language Processing"],
-    duration: "3 months",
-    role: "AI Developer & Frontend Engineer"
-  },
-  {
-    id: 3, // Real-Time Chat Application
-    title: "Real-Time Chat Application",
-    overview: "A feature-rich chat platform supporting text, voice, and video communication with end-to-end encryption and group channels.",
-    challenges: [
-      "Implementing secure end-to-end encryption for all communication",
-      "Handling WebRTC connections for peer-to-peer video calls",
-      "Ensuring message delivery even with unreliable connections",
-      "Scaling WebSocket connections for thousands of concurrent users"
-    ],
-    solutions: [
-      "Developed custom encryption protocol using the Web Crypto API",
-      "Created a signaling server for WebRTC negotiation with fallback mechanisms",
-      "Implemented message queuing with delivery receipts and offline support",
-      "Used Socket.io with a horizontally scalable architecture on Node.js"
-    ],
-    outcomes: [
-      "Successfully encrypted all communications with zero reported breaches",
-      "Achieved high-quality video calls with adaptive bitrate based on connection quality",
-      "Reduced message delivery failures by 98% compared to previous solutions",
-      "Platform supports over 10,000 concurrent connections with minimal latency"
-    ],
-    technologies: ["React", "Socket.io", "WebRTC", "Express", "MongoDB", "JWT"],
-    duration: "5 months",
-    role: "Lead Developer"
-  },
-  {
-    id: 7, // E-Commerce Backend
+    id: 7, // Corresponds to the project ID in projectData.js
     title: "E-Commerce Backend",
     overview: "A comprehensive RESTful API backend system for e-commerce platforms that handles products, categories, and tags with full CRUD operations.",
     challenges: [
@@ -106,55 +28,29 @@ export const CaseStudiesData = [
     role: "Full Stack Developer"
   },
   {
-    id: 9, // AI Image Generation Platform
-    title: "AI Image Generation Platform",
-    overview: "A web application that utilizes Generative Adversarial Networks (GANs) to create unique, high-quality images based on text descriptions.",
+    id: 9, // Corresponds to the project ID in projectData.js
+    title: "Social Network API",
+    overview: "A MongoDB-based API for social networking applications featuring user profiles, thought sharing, friend connections, and reaction capabilities.",
     challenges: [
-      "Training GAN models capable of generating high-resolution, realistic images",
-      "Building a user-friendly interface for text-to-image generation",
-      "Optimizing the inference process for reasonable response times",
-      "Managing computational resources efficiently for cost-effectiveness"
+      "Designing a NoSQL database structure optimized for social interactions",
+      "Handling complex nested data like comments and reactions",
+      "Managing user relationships (friends, followers) efficiently",
+      "Ensuring scalability for potentially viral content"
     ],
     solutions: [
-      "Fine-tuned pre-existing GAN models on specific domains to improve quality",
-      "Created an intuitive UI with real-time previews and generation options",
-      "Implemented a queuing system for handling multiple generation requests",
-      "Used AWS Elastic Container Service for scalable, on-demand processing"
+      "Leveraged MongoDB's document model for flexible data structures",
+      "Used Mongoose schema validation to ensure data integrity",
+      "Implemented aggregation pipelines for complex data retrieval",
+      "Created reusable controllers for similar operations across models"
     ],
     outcomes: [
-      "Platform generates images with 85% user satisfaction rating",
-      "Reduced image generation time from minutes to seconds",
-      "Successfully created a gallery of over 10,000 AI-generated images",
-      "Integrated with social media platforms for direct sharing"
+      "Built a complete API with user, thought, and reaction models",
+      "Achieved sub-100ms response times for most API endpoints",
+      "Created a system capable of handling millions of user interactions",
+      "Developed comprehensive API documentation for frontend developers"
     ],
-    technologies: ["Python", "TensorFlow", "GANs", "Flask", "React", "AWS S3"],
-    duration: "6 months",
-    role: "Machine Learning Engineer & Full Stack Developer"
-  },
-  {
-    id: 10, // Blockchain Voting System
-    title: "Blockchain Voting System",
-    overview: "A secure, transparent voting platform built on Ethereum blockchain that ensures vote integrity and prevents tampering or double-voting.",
-    challenges: [
-      "Ensuring voter anonymity while maintaining verification of eligibility",
-      "Creating a user-friendly interface for non-technical voters",
-      "Minimizing Ethereum gas costs for voting transactions",
-      "Providing transparency in the vote counting process"
-    ],
-    solutions: [
-      "Implemented zero-knowledge proofs for anonymous yet verifiable voting",
-      "Designed a step-by-step interface that abstracts blockchain complexity",
-      "Optimized smart contract code to reduce gas consumption",
-      "Created a real-time dashboard showing voting progress and results"
-    ],
-    outcomes: [
-      "Successfully conducted a pilot election with 500 participants",
-      "Reduced transaction costs by 60% compared to similar blockchain voting systems",
-      "Achieved 100% accuracy in vote tallying with cryptographic verification",
-      "System received security audit with no critical vulnerabilities found"
-    ],
-    technologies: ["Solidity", "Ethereum", "React", "Web3.js", "Truffle", "Metamask"],
-    duration: "7 months",
-    role: "Blockchain Developer & Frontend Engineer"
+    technologies: ["MongoDB", "Mongoose", "Express", "Node.js"],
+    duration: "5 weeks",
+    role: "Backend Developer"
   }
 ];
