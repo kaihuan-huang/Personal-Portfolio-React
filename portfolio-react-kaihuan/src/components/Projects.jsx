@@ -98,7 +98,10 @@ const Projects = () => {
         {showCaseStudy ? (
           <CaseStudy 
             projectId={selectedProject} 
-            onBack={() => setShowCaseStudy(false)} 
+            onBack={() => {
+              setShowCaseStudy(false);
+              setFilteredProjects(Data); // Reset to show all projects when returning from case study
+            }} 
           />
         ) : (
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">

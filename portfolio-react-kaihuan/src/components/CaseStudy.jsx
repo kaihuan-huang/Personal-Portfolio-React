@@ -12,17 +12,9 @@ const CaseStudy = ({ projectId, onBack }) => {
   const project = Data.find(proj => proj.id === projectId);
   
   if (!caseStudy || !project) {
-    return (
-      <div className="bg-[#112240] p-6 rounded-lg shadow-lg">
-        <button 
-          onClick={onBack}
-          className="flex items-center gap-2 text-pink-600 mb-6 hover:text-pink-500 transition-all"
-        >
-          <FaArrowLeft /> Back to Projects
-        </button>
-        <p className="text-center text-gray-300">Case study not found.</p>
-      </div>
-    );
+    // If no case study is found, immediately go back to the projects
+    onBack();
+    return null;
   }
 
   return (
