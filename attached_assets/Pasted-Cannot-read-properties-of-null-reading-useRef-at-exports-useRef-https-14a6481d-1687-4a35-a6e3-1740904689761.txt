@@ -1,0 +1,19 @@
+Cannot read properties of null (reading 'useRef')
+at exports.useRef (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:5267:31)
+at BrowserRouter (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:126410:55)
+at renderWithHooks (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:27859:22)
+at mountIndeterminateComponent (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:31145:17)
+at beginWork (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:32441:20)
+at HTMLUnknownElement.callCallback (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:17451:18)
+at Object.invokeGuardedCallbackDev (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:17495:20)
+at invokeGuardedCallback (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:17552:35)
+at beginWork$1 (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:37426:11)
+at performUnitOfWork (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:36673:16)
+The above error occurred in the <BrowserRouter> component:
+
+    at BrowserRouter (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:126406:5)
+    at ThemeProvider (https://14a6481d-1687-4a35-a6e3-646b72a67e4d-00-2x51sqow8doxz.worf.replit.dev/Personal-Portfolio-React/static/js/bundle.js:3921:5)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
