@@ -1,7 +1,7 @@
 
-import Wavebreak from '../assets/projects/Wavebreak.jpeg'
-import CodeApedia from '../assets/projects/CodeApedia.jpg'
-import TechOPedia from '../assets/projects/TechOPedia.jpg'
+import Wavebreak from '../assets/projects/Wavebreak.png'
+import CodeApedia from '../assets/projects/CodeApedia.png'
+import TechOPedia from '../assets/projects/TechOPedia.png'
 import JsQuiz from '../assets/projects/quiz.jpg'
 import PasswordGenerator from '../assets/projects/password.jpg'
 import WeatherDashboard from '../assets/projects/weather.jpg'
