@@ -5,7 +5,7 @@ const About = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div name="about" className={`w-full min-h-screen ${darkMode ? 'bg-gradient-to-b from-gray-800 to-gray-900' : 'bg-gradient-to-b from-[#112240] to-[#0a192f]'} text-gray-100`}>
+    <div name="about" className={`w-full min-h-screen ${darkMode ? 'bg-gradient-to-b from-gray-800 to-gray-900' : 'bg-gradient-to-b from-[#d8e6f8] to-[#ecf2fb]'} ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>

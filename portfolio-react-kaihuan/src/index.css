@@ -24,6 +24,10 @@ body {
   @apply bg-[#ecf2fb] text-[#0a192f];
 }
 
+body {
+  @apply bg-[#ecf2fb] text-[#0a192f];
+}
+
 html.dark body {
   @apply bg-[#0a192f] text-[#f9fafb];
 }

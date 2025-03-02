@@ -7,7 +7,7 @@ const Home = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div name="home" className={`w-full h-screen ${darkMode ? 'bg-gradient-to-b from-gray-900 to-gray-800' : 'bg-gradient-to-b from-[#0a192f] to-[#112240]'}`}>
+    <div name="home" className={`w-full h-screen ${darkMode ? 'bg-gradient-to-b from-gray-900 to-gray-800' : 'bg-gradient-to-b from-[#ecf2fb] to-[#d8e6f8]'}`}>
     {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       {/* Container */}
       <div className="max-w-[700px] mx-auto px-8 flex flex-col justify-center h-full">
