@@ -25,7 +25,7 @@ export default BlogFilter;
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
-const BlogFilter = ({ categories, activeFilter, handleFilterChange }) => {
+const BlogCard = ({ categories, activeFilter, handleFilterChange }) => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
@@ -47,4 +47,4 @@ const BlogFilter = ({ categories, activeFilter, handleFilterChange }) => {
   );
 };
 
-export default BlogFilter;
+export default BlogCard;
