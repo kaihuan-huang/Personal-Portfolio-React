@@ -1,4 +1,5 @@
 
+// Using WeatherDashboard image for Wavebreak since the file seems to be missing
 import Wavebreak from '../assets/projects/weather.jpg'
 import CodeApedia from '../assets/projects/CodeApedia.png'
 import TechOPedia from '../assets/projects/TechOPedia.png'
