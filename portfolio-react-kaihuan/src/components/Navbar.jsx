@@ -33,8 +33,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li>
@@ -43,13 +43,18 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
+          <Link to="resume" smooth={true} duration={500}>
+            Resume
           </Link>
         </li>
         <li>
           <Link to="contact" smooth={true} duration={500}>
             Contact
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
           </Link>
         </li>
       </ul>
@@ -71,17 +76,20 @@ const Navbar = () => {
           <li className="py-6 text-4xl"><Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link></li>
-          <li className="py-6 text-4xl"><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+            Projects
           </Link></li>
           <li className="py-6 text-4xl"><Link onClick={handleClick} to="experience" smooth={true} duration={500}> {/* Added Experience link */}
             Experience
           </Link></li>
-          <li className="py-6 text-4xl"><Link onClick={handleClick} to="projects" smooth={true} duration={500}>
-            Projects
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="resume" smooth={true} duration={500}>
+            Resume
           </Link></li>
           <li className="py-6 text-4xl"><Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            Skills
           </Link></li>
         </ul>
       </div>
