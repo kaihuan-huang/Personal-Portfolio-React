@@ -82,7 +82,6 @@ html.dark body {
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  color: white;
 }
 
 .blog-content h3 {
@@ -90,6 +89,10 @@ html.dark body {
   font-weight: 600;
   margin-top: 1.25rem;
   margin-bottom: 0.75rem;
+}
+
+html.dark .blog-content h2,
+html.dark .blog-content h3 {
   color: white;
 }
 
@@ -116,17 +119,25 @@ html.dark body {
 }
 
 .blog-content pre {
-  background-color: #1e293b;
   padding: 1rem;
   border-radius: 0.5rem;
   overflow-x: auto;
   margin-bottom: 1rem;
+  background-color: #f1f5f9;
+}
+
+html.dark .blog-content pre {
+  background-color: #1e293b;
 }
 
 .blog-content code {
-  background-color: #1e293b;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   font-family: monospace;
   font-size: 0.875rem;
+  background-color: #f1f5f9;
+}
+
+html.dark .blog-content code {
+  background-color: #1e293b;
 }

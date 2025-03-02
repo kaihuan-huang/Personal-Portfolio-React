@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import {Link} from 'react-scroll'; 
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
 
 const Navbar = () => {
@@ -44,9 +45,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="blog" smooth={true} duration={500}>
+          <RouterLink to="/blog" className="cursor-pointer">
             Blog
-          </Link>
+          </RouterLink>
         </li>
         <li>
           <Link to="projects" smooth={true} duration={500}>
@@ -88,9 +89,11 @@ const Navbar = () => {
           <li className="py-3 text-2xl"><Link onClick={handleClick} to="experience" smooth={true} duration={500}>
             Experience
           </Link></li>
-          <li className="py-3 text-2xl"><Link onClick={handleClick} to="blog" smooth={true} duration={500}>
-            Blog
-          </Link></li>
+          <li className="py-3 text-2xl">
+            <RouterLink onClick={handleClick} to="/blog">
+              Blog
+            </RouterLink>
+          </li>
           <li className="py-3 text-2xl"><Link onClick={handleClick} to="projects" smooth={true} duration={500}>
             Projects
           </Link></li>
