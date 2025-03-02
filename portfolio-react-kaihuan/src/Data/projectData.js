@@ -6,8 +6,20 @@ import TechOPedia from '../assets/projects/TechOPedia.png'
 import JsQuiz from '../assets/projects/quiz.jpg'
 import PasswordGenerator from '../assets/projects/password.jpg'
 import WeatherDashboard from '../assets/projects/weather.jpg'
+import LightUp from '../assets/projects/weather.jpg' // Temporary using weather image
 
 export const Data = [
+  {
+    id: 0,
+    name: "LightUp",
+    image: LightUp,
+    github: "https://github.com/yourusername/lightup",
+    live: "https://www.youtube.com/watch?v=Ylx-flD1pOg",
+    description: "Digital solution revolutionizing donations by fostering genuine connections between young donors and NPOs.",
+    technologies: ["UXUI", "Figma", "Object Oriented Design", "Strategic Product Development"],
+    category: "Full Stack",
+    featured: true
+  },
     {
         id: 1,
         name: "Code-a-pedia",

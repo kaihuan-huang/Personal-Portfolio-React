@@ -1,6 +1,31 @@
-
 // Case studies data for featured projects
 export const CaseStudiesData = [
+  {
+    id: 0, // Corresponds to the project ID in projectData.js
+    title: "LightUp - Revolutionizing Donation Experiences",
+    overview: "LightUp is a digital solution that revolutionizes donations by fostering genuine connections between young donors and nonprofit organizations. The project addresses the gap where young donors seek impactful giving beyond traditional methods, while NPOs face engagement challenges.",
+    challenges: [
+      "Creating an MVP for a donation-enhancing app in just 24 hours",
+      "Addressing the engagement gap between young donors and nonprofit organizations",
+      "Developing a solution that appeals to donors seeking more impactful giving experiences",
+      "Coordinating with a global cross-functional team"
+    ],
+    solutions: [
+      "Developed a user-centered design approach focused on creating emotional connections",
+      "Implemented a strategic product development process to quickly iterate on ideas",
+      "Used Figma to create intuitive and engaging user interfaces",
+      "Applied object-oriented design principles for a scalable architecture"
+    ],
+    outcomes: [
+      "First Place at the Girls in Tech SF Hackathon",
+      "Gold Winner - London Design Award",
+      "Nominated - UX Design Award 2024",
+      "Successfully created an MVP that demonstrates the potential to transform donation experiences"
+    ],
+    technologies: ["UXUI", "Figma", "Object Oriented Design", "Strategic Product Development"],
+    duration: "November 2023 - Present",
+    role: "Team Leader & Designer"
+  },
   {
     id: 7, // Corresponds to the project ID in projectData.js
     title: "E-Commerce Backend",
