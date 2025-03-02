@@ -31,7 +31,7 @@ export const ExperienceData = [
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "RESTful APIs"]
   },
   {
-    id: 2,
+    id: 3,
     title: "Web Developer",
     company: "Open Source Projects",
     location: "Remote",
