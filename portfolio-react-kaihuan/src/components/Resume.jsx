@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
+// If the PDF file is missing, this will show a fallback message
 import resumePDF from '../assets/resume/Kai_SDE_2025.pdf';
 
 const Resume = () => {

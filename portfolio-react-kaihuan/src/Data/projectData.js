@@ -1,11 +1,12 @@
-// Using WeatherDashboard image for Wavebreak since the file seems to be missing
+// Using WeatherDashboard image as fallback for missing images
 import Wavebreak from '../assets/projects/weather.jpg'
 import CodeApedia from '../assets/projects/CodeApedia.png'
 import TechOPedia from '../assets/projects/TechOPedia.png'
 import JsQuiz from '../assets/projects/quiz.jpg'
 import PasswordGenerator from '../assets/projects/password.jpg'
 import WeatherDashboard from '../assets/projects/weather.jpg'
-import LightUp from '../assets/projects/lightup.jpg'
+// Fallback for missing lightup.jpg
+import LightUp from '../assets/projects/weather.jpg'
 
 // Project data
 export const Data = [
