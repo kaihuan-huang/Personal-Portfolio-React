@@ -2,47 +2,47 @@
 export const ExperienceData = [
   {
     id: 1,
-    title: "Software Engineer",
-    company: "Tech Solutions Inc.",
-    location: "San Francisco, CA",
+    title: "Full Stack Developer",
+    company: "Self-Employed/Freelance",
+    location: "Remote",
     period: "2023 - Present",
-    description: "Developed and maintained web applications using React, Node.js, and MongoDB. Implemented RESTful APIs and improved application performance by 30%.",
+    description: "Working on various web development projects using modern technologies to create responsive and efficient web applications.",
     responsibilities: [
-      "Led the frontend development team for client projects",
-      "Implemented responsive designs using React and Tailwind CSS",
-      "Collaborated with UX/UI designers to create intuitive user interfaces",
-      "Participated in code reviews and mentored junior developers"
+      "Developing full-stack applications using React, Node.js, and MongoDB",
+      "Implementing responsive designs with Tailwind CSS and Bootstrap",
+      "Creating RESTful APIs for seamless front-end and back-end integration",
+      "Managing project workflows with Git and deploying applications to Heroku"
     ],
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"]
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "RESTful APIs"]
   },
   {
     id: 2,
-    title: "Web Developer Intern",
-    company: "Digital Innovations",
-    location: "Boston, MA",
+    title: "Web Developer",
+    company: "Open Source Projects",
+    location: "Remote",
     period: "2022 - 2023",
-    description: "Assisted in the development of web applications and contributed to the company's internal tools.",
+    description: "Contributed to open-source projects and developed personal applications to enhance skills and portfolio.",
     responsibilities: [
-      "Built responsive UIs using HTML, CSS, and JavaScript",
-      "Assisted senior developers with debugging and testing",
-      "Participated in daily stand-up meetings and sprint planning",
-      "Documented code and created technical specifications"
+      "Built responsive user interfaces using React and modern CSS frameworks",
+      "Developed backend systems with Node.js, Express, and MongoDB",
+      "Implemented authentication and authorization using JWT",
+      "Created and consumed RESTful APIs for data management"
     ],
-    technologies: ["JavaScript", "HTML", "CSS", "jQuery", "Bootstrap"]
+    technologies: ["JavaScript", "React", "Node.js", "Express", "MongoDB", "MySQL"]
   },
   {
     id: 3,
-    title: "Teaching Assistant",
-    company: "University Coding Bootcamp",
+    title: "Coding Bootcamp Graduate",
+    company: "Full Stack Web Development Program",
     location: "Remote",
-    period: "2021 - 2022",
-    description: "Assisted instructors in teaching web development concepts to students in a full-stack coding bootcamp.",
+    period: "2022",
+    description: "Completed an intensive coding bootcamp focused on modern web development technologies and practices.",
     responsibilities: [
-      "Provided one-on-one assistance to students during lab sessions",
-      "Graded assignments and provided constructive feedback",
-      "Conducted review sessions on JavaScript, React, and Node.js",
-      "Created supplementary learning materials for complex topics"
+      "Mastered front-end development with HTML, CSS, JavaScript, and React",
+      "Learned back-end development with Node.js, Express, and databases",
+      "Collaborated with peers on group projects simulating real-world work environments",
+      "Developed full-stack applications from concept to deployment"
     ],
-    technologies: ["JavaScript", "React", "Node.js", "MySQL", "MongoDB"]
+    technologies: ["JavaScript", "React", "Node.js", "MySQL", "MongoDB", "Git", "Heroku"]
   }
 ];

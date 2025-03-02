@@ -14,7 +14,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col gap-8">
-          {ExperienceData.map((job) => (
+          {ExperienceData && ExperienceData.length > 0 ? ExperienceData.map((job) => (
             <div 
               key={job.id}
               className="bg-[#112240] p-6 rounded-lg shadow-lg hover:shadow-pink-600/20 transition-all duration-300"
@@ -50,7 +50,11 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-          ))}
+          )) : (
+            <div className="bg-[#112240] p-6 rounded-lg shadow-lg text-center">
+              <p>No experience data available.</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
