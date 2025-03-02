@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import resumePDF from '../assets/resume/Kai_SDE_2025.pdf';
@@ -10,7 +9,7 @@ const Resume = () => {
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-white'>Resume</p>
           <p className='py-6'>Check out my professional experience and skills</p>
-          
+
           <div className='flex flex-col md:flex-row gap-6 mb-10'>
             <a 
               href={resumePDF} 
@@ -28,25 +27,37 @@ const Resume = () => {
               View Resume
             </a>
           </div>
-          
+
           <div className='bg-[#112240] p-6 rounded-lg shadow-lg'>
             <h2 className='text-2xl font-bold mb-4 text-white'>Professional Skills</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
               <div className='bg-[#1e3a6c] p-4 rounded'>
                 <h3 className='font-bold mb-2'>Frontend Development</h3>
-                <p>React, JavaScript, HTML, CSS, Tailwind, Bootstrap</p>
+                <p>React, React Native, JavaScript, TypeScript, HTML, CSS, Tailwind, Bootstrap, Next.js, Redux, SASS, Webpack</p>
               </div>
               <div className='bg-[#1e3a6c] p-4 rounded'>
                 <h3 className='font-bold mb-2'>Backend Development</h3>
-                <p>Node.js, Express, MySQL, MongoDB, RESTful APIs</p>
+                <p>Node.js, Express, MySQL, MongoDB, PostgreSQL, Django, Flask, GraphQL, Redis, Java, PHP</p>
               </div>
               <div className='bg-[#1e3a6c] p-4 rounded'>
-                <h3 className='font-bold mb-2'>Tools & Platforms</h3>
-                <p>Git, GitHub, VS Code, Heroku, Insomnia</p>
+                <h3 className='font-bold mb-2'>DevOps & Tools</h3>
+                <p>Git, GitHub, Docker, Kubernetes, AWS, Azure, Heroku, Nginx, Bash, Postman, VS Code</p>
+              </div>
+              <div className='bg-[#1e3a6c] p-4 rounded'>
+                <h3 className='font-bold mb-2'>Data Science & AI</h3>
+                <p>Python, Pandas, TensorFlow, PyTorch, Scikit-learn, OpenCV, Seaborn</p>
+              </div>
+              <div className='bg-[#1e3a6c] p-4 rounded'>
+                <h3 className='font-bold mb-2'>Education</h3>
+                <p>Master's in Computer Science (University of York), Certified Full Stack Web Developer (UC Berkeley Extension)</p>
+              </div>
+              <div className='bg-[#1e3a6c] p-4 rounded'>
+                <h3 className='font-bold mb-2'>Other Skills</h3>
+                <p>Figma, Zapier, Agile/Scrum, Technical Writing, Problem Solving</p>
               </div>
             </div>
           </div>
-          
+
           <div className='mt-10 bg-[#112240] p-6 rounded-lg shadow-lg'>
             <p className='text-white text-lg font-semibold mb-4'>
               For a complete overview of my experience, education, and skills, please download the resume or view it online.
