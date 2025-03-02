@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
   FaBars,
   FaTimes,
@@ -7,15 +7,16 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import {Link} from 'react-scroll'; //https://www.npmjs.com/package/react-scroll
-// import kaihuan from '../assets/kaihuan.png'
+import {Link} from 'react-scroll'; 
+import { ThemeContext } from '../context/ThemeContext';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
-      <div name='navbar' className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb]" >
+      <div name='navbar' className={`fixed w-full h-[60px] flex justify-between items-center px-4 ${darkMode ? 'bg-[#0f172a]' : 'bg-[#ecf2fb]'}`}>
         <div>
           <div className="text-xl font-bold text-pink-600">KH</div>
         </div>

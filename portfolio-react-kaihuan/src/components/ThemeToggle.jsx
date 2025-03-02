@@ -9,10 +9,14 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed bottom-5 right-5 p-3 rounded-full bg-pink-600 text-white shadow-lg hover:bg-pink-700 transition-all duration-300 z-50"
+      className="fixed bottom-5 right-5 p-3 rounded-full bg-pink-600 text-white shadow-lg hover:bg-pink-700 transition-all duration-300 z-50 focus:outline-none focus:ring-2 focus:ring-pink-400"
       aria-label="Toggle Dark Mode"
     >
-      {darkMode ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
+      {darkMode ? (
+        <FaSun className="text-xl" title="Switch to Light Mode" />
+      ) : (
+        <FaMoon className="text-xl" title="Switch to Dark Mode" />
+      )}
     </button>
   );
 };
