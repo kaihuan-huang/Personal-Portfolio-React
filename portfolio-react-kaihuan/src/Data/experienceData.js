@@ -46,7 +46,7 @@ export const ExperienceData = [
     technologies: ["JavaScript", "React", "Node.js", "Express", "MongoDB", "MySQL"]
   },
   {
-    id: 4,
+    id: 3,
     title: "Coding Bootcamp Graduate",
     company: "Full Stack Web Development Program",
     location: "Remote",
