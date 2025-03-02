@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-scroll';
 
@@ -36,20 +35,20 @@ const BlogCard = ({ blog }) => {
 };
 
 export default BlogCard;
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
 
 const BlogCard = ({ blog }) => {
   const { darkMode } = useContext(ThemeContext);
-  
+
   return (
     <div className={`rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl ${darkMode ? 'bg-[#112240] text-gray-300' : 'bg-white text-gray-800'}`}>
       <div className="p-6">
         <h3 className={`text-xl font-bold mb-3 ${darkMode ? 'text-white' : 'text-gray-800'}`}>{blog.title}</h3>
         <p className="text-sm mb-3">{blog.date}</p>
         <p className={`mb-4 line-clamp-3 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>{blog.summary}</p>
-        
+
         <div className="flex flex-wrap gap-2 mb-4">
           {blog.tags.map((tag, index) => (
             <span key={index} className={`text-xs px-2 py-1 rounded ${darkMode ? 'bg-gray-700 text-gray-300' : 'bg-gray-200 text-gray-700'}`}>
@@ -57,7 +56,7 @@ const BlogCard = ({ blog }) => {
             </span>
           ))}
         </div>
-        
+
         <Link 
           to={`/blog/${blog.id}`} 
           className={`mt-auto inline-block px-4 py-2 rounded-md ${darkMode ? 'bg-pink-600 hover:bg-pink-700' : 'bg-pink-500 hover:bg-pink-600'} text-white transition-all`}

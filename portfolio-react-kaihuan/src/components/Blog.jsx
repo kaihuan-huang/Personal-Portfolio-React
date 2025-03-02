@@ -1,9 +1,8 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { BlogData } from '../Data/blogData';
 import BlogCard from './BlogCard';
 import BlogFilter from './BlogFilter';
-
+import { ThemeContext } from '../context/ThemeContext';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
@@ -11,7 +10,7 @@ const Blog = () => {
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const { darkMode } = useContext(ThemeContext);
-  
+
   useEffect(() => {
     // Only show the 3 most recent blog posts on the home page
     const recentBlogs = BlogData.slice(0, 3);
@@ -25,7 +24,7 @@ const Blog = () => {
   // Filter blogs by category
   const handleFilterChange = (category) => {
     setActiveFilter(category);
-    
+
     if (category === 'All') {
       setFilteredBlogs(blogs);
     } else {
