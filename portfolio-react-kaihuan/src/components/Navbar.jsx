@@ -93,7 +93,11 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300'>
             <a className='flex justify-between items-center w-full text-gray-600'
-            href="/">
+            href="#resume" 
+            onClick={() => {
+              const resumeSection = document.querySelector('[name="resume"]');
+              if (resumeSection) resumeSection.scrollIntoView({ behavior: 'smooth' });
+            }}>
               Resume <BsFillPersonLinesFill size={30}/>
             </a>
           </li>
