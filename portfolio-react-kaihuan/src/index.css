@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --primary-dark: #0a192f;
-  --secondary-dark: #112240;
+  --primary-dark: #ffffff;
+  --secondary-dark: #14c8bc;
   --text-light: #f9fafb;
   --accent: #f472b6;
 }
 
 html.dark {
-  --primary-dark: #1f2937;
-  --secondary-dark: #111827;
+  --primary-dark: #5187d2;
+  --secondary-dark: #0e2f77;
 }
 
 body {
@@ -33,7 +33,7 @@ html.dark body {
 }
 
 .dark .dark-bg-gray-900 {
-  background-color: #111827;
+  background-color: #c1d0f0;
 }
 
 .dark .dark-bg-gray-800 {
