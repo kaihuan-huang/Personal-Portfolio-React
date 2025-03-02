@@ -7,6 +7,10 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import Blog from "./components/Blog";
+import ThemeToggle from './components/ThemeToggle'; 
+import { ThemeContext } from './context/ThemeContext'; 
+import React, { useContext } from 'react';
 
 function App() {
   return (
@@ -16,9 +20,11 @@ function App() {
       <About />
       <Projects />
       <Experience />
+      <Blog />
       <Resume />
       <Contact />
       <Skills />
+      <ThemeToggle /> 
       <Footer />
     </div>
   );
