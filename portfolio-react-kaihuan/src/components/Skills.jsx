@@ -84,21 +84,21 @@ const Skills = () => {
 
           {skillCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="mb-10">
-              <h3 className="text-lg font-semibold text-white mb-1">{category.name}</h3>
-              <div className='grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2'>
+              <h3 className="text-xl font-semibold text-white mb-2">{category.name}</h3>
+              <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-3'>
                 {category.skills.map((skill, skillIndex) => (
                   <div 
                     key={skillIndex}
-                    className='bg-[#112240] p-2 rounded-lg shadow-md shadow-[#040c16] hover:scale-110 duration-500 flex flex-col items-center justify-center'
+                    className='bg-[#112240] p-3 rounded-lg shadow-md shadow-[#040c16] hover:scale-110 duration-500 flex flex-col items-center justify-center'
                   >
                     {skill.icon ? (
-                      <img className='w-5 mx-auto' src={skill.icon} alt={`${skill.name} icon`} />
+                      <img className='w-10 mx-auto' src={skill.icon} alt={`${skill.name} icon`} />
                     ) : (
-                      <div className="w-5 h-5 flex items-center justify-center text-sm text-pink-600 font-bold">
+                      <div className="w-10 h-10 flex items-center justify-center text-xl text-pink-600 font-bold">
                         {skill.name.charAt(0)}
                       </div>
                     )}
-                    <p className='my-1 text-xs font-bold'>{skill.name.toUpperCase()}</p>
+                    <p className='my-2 text-sm font-bold'>{skill.name.toUpperCase()}</p>
                   </div>
                 ))}
               </div>
