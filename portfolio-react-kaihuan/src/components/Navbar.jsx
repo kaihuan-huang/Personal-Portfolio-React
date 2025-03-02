@@ -7,22 +7,17 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import {Link} from 'react-scroll' //https://www.npmjs.com/package/react-scroll
+import {Link} from 'react-scroll'; //https://www.npmjs.com/package/react-scroll
 // import kaihuan from '../assets/kaihuan.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  // Use a text logo if image is missing
-  const Logo = undefined; // This will cause the text logo fallback to be used
+
   return (
       <div name='navbar' className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb]" >
         <div>
-          {Logo ? (
-            <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
-          ) : (
-            <div className="text-xl font-bold text-pink-600">KH</div>
-          )}
+          <div className="text-xl font-bold text-pink-600">KH</div>
         </div>
 
       {/* menu */}
