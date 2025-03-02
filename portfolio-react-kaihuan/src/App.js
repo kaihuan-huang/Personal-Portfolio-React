@@ -1,3 +1,4 @@
+
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -9,24 +10,25 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
 import ThemeToggle from './components/ThemeToggle'; 
-import { ThemeContext } from './context/ThemeContext'; 
-import React, { useContext } from 'react';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Experience />
-      <Blog />
-      <Resume />
-      <Contact />
-      <Skills />
-      <ThemeToggle /> 
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Experience />
+        <Blog />
+        <Resume />
+        <Contact />
+        <Skills />
+        <ThemeToggle /> 
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
