@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
     
       {/* menu */}
-      <ul className="hidden md:flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <ul className="hidden md:flex flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li> 
           <Link to="home" smooth={true} duration={500}>
             Home
