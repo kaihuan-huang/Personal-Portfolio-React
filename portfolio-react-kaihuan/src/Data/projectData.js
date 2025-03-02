@@ -6,7 +6,7 @@ import JsQuiz from '../assets/projects/quiz.jpg'
 import PasswordGenerator from '../assets/projects/password.jpg'
 import WeatherDashboard from '../assets/projects/weather.jpg'
 // Fallback for missing lightup.jpg
-import LightUp from '../assets/projects/weather.jpg'
+import LightUp from '../assets/projects/lightup.png'
 
 // Project data
 export const Data = [
