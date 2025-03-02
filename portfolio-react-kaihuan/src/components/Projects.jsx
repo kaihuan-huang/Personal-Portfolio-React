@@ -1,40 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Data } from "../Data/projectData";
 import ProjectFilter from "./ProjectFilter";
-
-// Placeholder case study data - replace with actual data
-const caseStudyData = {
-  "project1": {
-    title: "Case Study for Project 1",
-    challenges: ["Challenge 1", "Challenge 2"],
-    solutions: ["Solution 1", "Solution 2"],
-    outcomes: ["Outcome 1", "Outcome 2"]
-  },
-  "project2": {
-    title: "Case Study for Project 2",
-    challenges: ["Challenge 3", "Challenge 4"],
-    solutions: ["Solution 3", "Solution 4"],
-    outcomes: ["Outcome 3", "Outcome 4"]
-  }
-};
-
-// Basic CaseStudy component - replace with more detailed implementation
-const CaseStudy = ({ projectId, onBack }) => {
-  const study = caseStudyData[projectId];
-  if (!study) return <p>No case study found.</p>;
-  return (
-    <div>
-      <h1>{study.title}</h1>
-      <h2>Challenges:</h2>
-      <ul>{study.challenges.map((c, i) => <li key={i}>{c}</li>)}</ul>
-      <h2>Solutions:</h2>
-      <ul>{study.solutions.map((s, i) => <li key={i}>{s}</li>)}</ul>
-      <h2>Outcomes:</h2>
-      <ul>{study.outcomes.map((o, i) => <li key={i}>{o}</li>)}</ul>
-      <button onClick={onBack}>Back to Projects</button>
-    </div>
-  );
-};
+import CaseStudy from "./CaseStudy";
 
 
 const Projects = () => {
