@@ -130,3 +130,63 @@ const Navbar = () => {
 };
 
 export default Navbar;
+import React, { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import NavDropdown from './NavDropdown';
+import Logo from '../assets/logo.png'; // Make sure you have a logo image
+
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  
+  const handleClick = () => setNav(!nav);
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleShadow);
+    return () => {
+      window.removeEventListener('scroll', handleShadow);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] bg-[#0a192f]' : 'fixed w-full h-20 z-[100] bg-[#0a192f]'}>
+        <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
+          <Link to='home' smooth={true} duration={500}>
+            <img src={Logo} alt='Logo' width='125' height='50' className='cursor-pointer' />
+          </Link>
+          
+          <div className='hidden md:flex'>
+            <ul className='hidden md:flex'>
+              {['home', 'about', 'projects', 'experience', 'resume', 'contact', 'skills'].map(item => (
+                <li key={item} className='ml-10 text-sm uppercase hover:text-pink-600 text-gray-200'>
+                  <Link to={item} smooth={true} duration={500}>
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Hamburger Icon */}
+          <div onClick={handleClick} className='md:hidden cursor-pointer z-10'>
+            <FaBars size={30} className='text-white hover:text-pink-600 transition-colors duration-300' />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <NavDropdown isOpen={nav} toggle={handleClick} />
+    </>
+  );
+};
+
+export default Navbar;
