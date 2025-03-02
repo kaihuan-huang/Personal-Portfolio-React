@@ -16,7 +16,7 @@ const Navbar = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
-      <div name='navbar' className={`fixed w-full h-[60px] flex justify-between items-center px-4 ${darkMode ? 'bg-[#0f172a]' : 'bg-[#ecf2fb]'}`}>
+      <div name='navbar' className={`fixed w-full h-[60px] flex justify-between items-center px-4 z-10 ${darkMode ? 'bg-[#0a192f] text-[#f9fafb]' : 'bg-[#ecf2fb] text-[#0a192f]'}`}>
         <div>
           <div className="text-xl font-bold text-pink-600">KH</div>
         </div>

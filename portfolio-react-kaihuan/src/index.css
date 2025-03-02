@@ -1,5 +1,3 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,6 +21,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-[#ecf2fb] text-[#0a192f];
+}
+
+html.dark body {
+  @apply bg-[#0a192f] text-[#f9fafb];
 }
 
 .dark .dark-text-white {
@@ -60,16 +63,6 @@ body {
   height: 250px;
   position: relative;
 }
-
-
-/* .projects div {
-  background-color: rgba(248, 247, 216, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 .projects:hover {
   background-image: linear-gradient(

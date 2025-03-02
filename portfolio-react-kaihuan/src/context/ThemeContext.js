@@ -37,7 +37,6 @@ export const ThemeProvider = ({ children }) => {
   }, [darkMode, initialized]);
 
   const toggleTheme = () => {
-    console.log("Toggle theme called, current state:", darkMode);
     setDarkMode(prevMode => !prevMode);
   };
 
