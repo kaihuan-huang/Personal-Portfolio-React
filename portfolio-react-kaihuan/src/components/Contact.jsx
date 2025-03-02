@@ -2,14 +2,13 @@ import React from 'react'
 
 const Contact = () => {
     return (
-      <div name='contact' className='w-full min-h-screen text-gray-500 py-16'>
+      <div name='contact' className='w-full min-h-screen text-gray-500 py-16 px-4'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
-          <div className='max-w-[px] w-full grid grid-cols-2 gap-8'>
-            <div className='sm:text-right pb-8 pl-4'>
+          <div className='max-w-[1000px] w-full pb-8'>
+            <div className='text-center sm:text-left pb-8'>
               <p className='text-4xl font-bold inline text-pink-600'>
               Contact Me!
               </p>
-            </div>
             </div>
                 <form  action="https://getform.io/f/1c0e4abb-a618-4077-b6a2-37a87fff03ba" method="POST" className='flex flex-col max-w-[700px] w-full'>
                 <input className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' type="text" placeholder='Name' name='name' />
