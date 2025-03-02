@@ -1,0 +1,23 @@
+modules = ["nodejs-20", "web"]
+run = "npm run dev"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm run dev"]
+
+[workflows]
+runButton = "Start React App"
+
+[[workflows.workflow]]
+name = "Start React App"
+author = 31505585
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd portfolio-react-kaihuan && npm run start"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
