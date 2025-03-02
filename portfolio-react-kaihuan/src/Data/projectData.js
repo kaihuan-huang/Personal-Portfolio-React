@@ -1,6 +1,6 @@
 import Wavebreak from '../assets/projects/Wavebreak.jpeg'
 import CodeApedia from '../assets/projects/CodeApedia.jpg'
-import TechOPedia from '../assets/projects/TechOPedia'
+import TechOPedia from '../assets/projects/TechOPedia.jpg'
 
 export const Data=[
     {
