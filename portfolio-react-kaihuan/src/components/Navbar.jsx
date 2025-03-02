@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
           {/* <img src={kaihuan} alt="Logo Image" style={{ width: "64px" }} /> */}
         </div>
-    
+
       {/* menu */}
       <ul className="hidden md:flex flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li> 
@@ -35,6 +35,11 @@ const Navbar = () => {
         <li>
           <Link to="skills" smooth={true} duration={500}>
             Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="experience" smooth={true} duration={500}> {/* Added Experience link */}
+            Experience
           </Link>
         </li>
         <li>
@@ -68,6 +73,9 @@ const Navbar = () => {
           </Link></li>
           <li className="py-6 text-4xl"><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="experience" smooth={true} duration={500}> {/* Added Experience link */}
+            Experience
           </Link></li>
           <li className="py-6 text-4xl"><Link onClick={handleClick} to="projects" smooth={true} duration={500}>
             Projects

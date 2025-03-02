@@ -1,3 +1,4 @@
+
 import Wavebreak from '../assets/projects/weather.jpg'
 import CodeApedia from '../assets/projects/CodeApedia.png'
 import TechOPedia from '../assets/projects/TechOPedia.png'
@@ -13,7 +14,9 @@ export const Data = [
         image: CodeApedia,
         github: "https://github.com/kaihuan-huang/Code-a-pedia",
         live: "https://codeapedia.herokuapp.com/",
-        technologies: ["JavaScript", "Node.js", "Express", "MySQL", "Handlebars"]
+        technologies: ["JavaScript", "Node.js", "Express", "MySQL", "Handlebars"],
+        featured: true,
+        category: "Full Stack"
     },
     {
         id: 2,
@@ -22,7 +25,9 @@ export const Data = [
         image: Wavebreak,
         github: "https://github.com/kaihuan-huang/wavebreak",
         live: "",
-        technologies: ["HTML", "CSS", "JavaScript", "API Integration"]
+        technologies: ["HTML", "CSS", "JavaScript", "API Integration"],
+        featured: false,
+        category: "Frontend"
     },
     {
         id: 3,
@@ -31,7 +36,9 @@ export const Data = [
         image: TechOPedia,
         github: "https://github.com/kaihuan-huang/Tech-Blog",
         live: "https://stormy-anchorage-90135.herokuapp.com/posts",
-        technologies: ["Node.js", "Express", "MySQL", "MVC Pattern"]
+        technologies: ["Node.js", "Express", "MySQL", "MVC Pattern"],
+        featured: true,
+        category: "Full Stack"
     },
     {
         id: 4,
@@ -40,7 +47,9 @@ export const Data = [
         image: JsQuiz,
         github: "https://github.com/kaihuan-huang",
         live: "",
-        technologies: ["HTML", "CSS", "JavaScript", "Local Storage"]
+        technologies: ["HTML", "CSS", "JavaScript", "Local Storage"],
+        featured: false,
+        category: "Frontend"
     },
     {
         id: 5,
@@ -49,7 +58,9 @@ export const Data = [
         image: PasswordGenerator,
         github: "https://github.com/kaihuan-huang",
         live: "",
-        technologies: ["JavaScript", "CSS", "HTML"]
+        technologies: ["JavaScript", "CSS", "HTML"],
+        featured: false,
+        category: "Frontend"
     },
     {
         id: 6,
@@ -58,6 +69,41 @@ export const Data = [
         image: WeatherDashboard,
         github: "https://github.com/kaihuan-huang",
         live: "",
-        technologies: ["JavaScript", "OpenWeather API", "Bootstrap", "Local Storage"]
+        technologies: ["JavaScript", "OpenWeather API", "Bootstrap", "Local Storage"],
+        featured: false,
+        category: "Frontend"
+    },
+    {
+        id: 7,
+        name: "E-Commerce Backend",
+        description: "A robust RESTful API backend for e-commerce applications with product, category, and tag management",
+        image: WeatherDashboard,
+        github: "https://github.com/kaihuan-huang/E-Commerce-Back-End",
+        live: "",
+        technologies: ["Node.js", "Express", "Sequelize", "MySQL"],
+        featured: true,
+        category: "Backend"
+    },
+    {
+        id: 8,
+        name: "Team Profile Generator",
+        description: "A command-line application that generates an HTML webpage displaying summaries for each team member",
+        image: PasswordGenerator,
+        github: "https://github.com/kaihuan-huang/Team-Profile-Generator",
+        live: "",
+        technologies: ["Node.js", "Jest", "Inquirer", "OOP"],
+        featured: false,
+        category: "Backend"
+    },
+    {
+        id: 9,
+        name: "Social Network API",
+        description: "A MongoDB-based API for a social network application with user, thought, and reaction models",
+        image: TechOPedia,
+        github: "https://github.com/kaihuan-huang/Social-Network-API",
+        live: "",
+        technologies: ["MongoDB", "Mongoose", "Express", "Node.js"],
+        featured: true,
+        category: "Backend"
     }
 ]

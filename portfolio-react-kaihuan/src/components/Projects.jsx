@@ -7,11 +7,15 @@ const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [technologies, setTechnologies] = useState([]);
 
-  // Extract unique technologies from projects
+  // Extract unique technologies and categories from projects
   useEffect(() => {
     const allTechnologies = Data.flatMap(project => project.technologies);
     const uniqueTechnologies = [...new Set(allTechnologies)];
-    setTechnologies(uniqueTechnologies);
+    
+    // Add category filters
+    const categories = [...new Set(Data.map(project => project.category))];
+    
+    setTechnologies([...uniqueTechnologies, ...categories]);
     setFilteredProjects(Data);
   }, []);
 
@@ -19,7 +23,16 @@ const Projects = () => {
   useEffect(() => {
     if (activeFilter === 'All') {
       setFilteredProjects(Data);
+    } else if (['Frontend', 'Backend', 'Full Stack'].includes(activeFilter)) {
+      // Filter by category
+      const filtered = Data.filter(project => project.category === activeFilter);
+      setFilteredProjects(filtered);
+    } else if (activeFilter === 'Featured') {
+      // Filter featured projects
+      const filtered = Data.filter(project => project.featured);
+      setFilteredProjects(filtered);
     } else {
+      // Filter by technology
       const filtered = Data.filter(project => 
         project.technologies.includes(activeFilter)
       );
