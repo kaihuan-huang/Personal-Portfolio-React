@@ -15,7 +15,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-      <div name='navbar' className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb]" >
+      <div name='navbar' className="navbar fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb] dark:bg-[#112240] dark:text-white transition-colors duration-300" >
         <div>
           <div className="text-xl font-bold text-pink-600">KH</div>
         </div>

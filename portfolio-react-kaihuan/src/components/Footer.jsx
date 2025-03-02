@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   
   return (
-    <div className="w-full bg-[#0a192f] text-gray-300 py-8">
+    <div className="w-full bg-[#0a192f] dark:bg-[#0a192f] text-gray-300 py-8 transition-colors duration-300">
       <div className="max-w-[1200px] mx-auto p-4 flex flex-col md:flex-row justify-between items-center">
         <div>
           <p className="text-sm">&copy; {year} Kai Huan. All rights reserved.</p>
