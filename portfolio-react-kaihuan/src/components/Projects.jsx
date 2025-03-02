@@ -1,5 +1,4 @@
 import React from "react";
-// import { Data } from "../Data/projectData.js";
 import Wavebreak from "../assets/projects/wave.jpg";
 import CodeApedia from "../assets/projects/code.jpg";
 import TechOPedia from "../assets/projects/techblog.jpg";
@@ -11,318 +10,151 @@ import PWATextEditor from "../assets/projects/textEditorPWA.jpg";
 import shopShopCenter from "../assets/projects/eCommerce.png";
 
 const Projects = () => {
-  // const project = Data;
-
   return (
-    <div name="projects" className="w-full h-screen bg-[#8892b0] text-gray-100">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="sm:text-right pb-8 pl-4">
-          <p className="text-4xl font-bold inline text-pink-600">
-            My Projects!
-          </p>
-          {/* Containers for projects */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {/* Grid item1 */}
-            <div
-              style={{ backgroundImage: `url(${Wavebreak})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* <div> */}
-                {/* Hover effect for images */}
-                <div className="opacity-0 group-hover:opacity-100 ">
-                  <span className="text-2xl font bold text-white tracking-wider ">
-                    Wavebreak
-                  </span>
-                  <div className="pt-8 text-center">
-                  <p>An interactive Beach Dashboard application allows users to search the nearby beaches in California</p>
-                    <a href="https://github.com/kaihuan-huang/wavebreak">
-                      <button
-                        className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                      >
-                        Github
-                      </button>
-                    </a>
-                    <a href=" https://kaihuan-huang.github.io/wavebreak/">
-                      <button
-                        className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                      >
-                        live
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              {/* </div> */}
-            </div>
+    <div name="projects" className="w-full min-h-screen bg-gradient-to-b from-[#0a192f] to-[#8892b0] text-gray-100 py-16">
+      <div className="max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full">
+        <div className="pb-8">
+          <h2 className="text-4xl font-bold inline border-b-4 border-pink-600 text-white">
+            My Projects
+          </h2>
+          <p className="py-6 text-gray-300">Check out some of my recent work</p>
+        </div>
 
-            {/* Grid item2 */}
-            <div
-              style={{ backgroundImage: `url(${CodeApedia})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                  Code-a-pedia
-                </span>
-                <p>A knowledge wiki for coding terms/definitions/slangs to user in coding related background</p>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/pjsherpa/Code-a-pedia">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="https://codeapedia.herokuapp.com/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+        {/* Project Grid */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+          {/* Wavebreak */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={Wavebreak} alt="Wavebreak" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Wavebreak</h3>
+              <p className="text-gray-300 text-sm mb-4">An interactive Beach Dashboard application that allows users to search for nearby beaches in California</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/wavebreak" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://kaihuan-huang.github.io/wavebreak/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-            {/* Grid item3 */}
-            <div
-              style={{ backgroundImage: `url(${JsQuiz })` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Quiz App for JavaScript
-                </span>
-                <div className="pt-8 text-center">
-                <p>A time coding quiz with multiple-choice questions</p>
-                  <a href="https://kaihuan-huang.github.io/Quiz_App-JavaScript-/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="https://kaihuan-huang.github.io/Quiz_App-JavaScript-/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* CodeApedia */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={CodeApedia} alt="CodeApedia" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Code-a-pedia</h3>
+              <p className="text-gray-300 text-sm mb-4">A comprehensive coding resource platform for developers of all skill levels</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/pjsherpa/Code-a-pedia" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://codeapedia.herokuapp.com/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-            {/* Grid item4 */}
-            <div
-              style={{ backgroundImage: `url(${PasswordGenerator})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Password Generator
-                </span>
-                <p>Will generate a random password based on your selected criteria.</p>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/Password_Generator">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href=" https://kaihuan-huang.github.io/Password_Generator/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* TechOPedia */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={TechOPedia} alt="TechOPedia" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Tech-O-Pedia</h3>
+              <p className="text-gray-300 text-sm mb-4">A tech blog platform allowing users to share and discuss the latest in technology</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Tech-Blog" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://stormy-anchorage-90135.herokuapp.com/posts" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-            
-
-            {/* Grid item5 */}
-            <div
-              style={{ backgroundImage: `url(${TechOPedia})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                  Tech-O-Pedia
-                </span>
-                <p>CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well.</p>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/Tech-Blog">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* Weather Dashboard */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={WeatherDashboard} alt="Weather Dashboard" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Weather Dashboard</h3>
+              <p className="text-gray-300 text-sm mb-4">A weather application that displays current and forecast weather data for cities</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Weather_Dashboard_App" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://kaihuan-huang.github.io/Weather_Dashboard_App/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-             {/* Grid item */}
-             <div
-              style={{ backgroundImage: `url(${WeatherDashboard})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Weather Dashboard Applications
-                </span>
-                <p>A Weather Dashboard application allows a user to see the weather outlook for multiple cities.</p>
-                <div className="pt-8 text-center">
-                  <a href=" https://github.com/kaihuan-huang/Weather_Dashboard_App">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href=" https://kaihuan-huang.github.io/Weather_Dashboard_App/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* Work Day Scheduler */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={WorkDayScheduler} alt="Work Day Scheduler" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Work Day Scheduler</h3>
+              <p className="text-gray-300 text-sm mb-4">A simple calendar application that allows users to save events for each hour of the day</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Work-Day-Scheduler" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://kaihuan-huang.github.io/Work-Day-Scheduler/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-             {/* Grid item */}
-             <div
-              style={{ backgroundImage: `url(${WorkDayScheduler})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Work Day Scheduler
-                </span>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/wavebreak">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="https://stormy-anchorage-90135.herokuapp.com/posts">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* Password Generator */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={PasswordGenerator} alt="Password Generator" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Password Generator</h3>
+              <p className="text-gray-300 text-sm mb-4">An application that generates random passwords based on user-selected criteria</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Password_Generator" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://kaihuan-huang.github.io/Password_Generator/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
-
-            {/* Grid item */}
-            <div
-              style={{ backgroundImage: `url(${ PWATextEditor})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Text-Editor
-                </span>
-                <div className="pt-8 text-center">
-                  <a href=" https://github.com/kaihuan-huang/Progressive-Web-Applications-PWA--Text-Editor">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Progressive-Web-Applications
-                    </button>
-                  </a>
-                  <a href="https://warm-eyrie-41345.herokuapp.com/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          </div>
+          {/* JsQuiz */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={JsQuiz} alt="JsQuiz" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">JavaScript Quiz App</h3>
+              <p className="text-gray-300 text-sm mb-4">A timed coding quiz with multiple-choice questions.</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Quiz_App-JavaScript-" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://kaihuan-huang.github.io/Quiz_App-JavaScript-/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-            {/* Grid item */}
-            <div
-              style={{ backgroundImage: `url(${shopShopCenter})` }}
-              className="group container rounded-md 
-              flex justify-center text-center items-center mx-auto projects "
-            >
-              {/* Hover effect for images */}
-              <div className="opacity-0 group-hover:opacity-100 ">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                Shop-Shop-Center
-                </span>
-                <div className="pt-8 text-center">
-                  <a href="https://github.com/kaihuan-huang/shop-shop-center">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Github
-                    </button>
-                  </a>
-                  <a href="/">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-                    >
-                      live
-                    </button>
-                  </a>
-                </div>
+          {/* PWATextEditor */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={PWATextEditor} alt="PWATextEditor" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Text Editor PWA</h3>
+              <p className="text-gray-300 text-sm mb-4">A text editor built as a Progressive Web App (PWA).</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/Progressive-Web-Applications-PWA--Text-Editor" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="https://warm-eyrie-41345.herokuapp.com/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
               </div>
             </div>
+          </div>
 
-
-
-
+          {/* shopShopCenter */}
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-between bg-[#112240] overflow-hidden transition-all duration-300 hover:scale-105">
+            <div className="h-48 overflow-hidden">
+              <img src={shopShopCenter} alt="shopShopCenter" className="w-full h-full object-cover group-hover:opacity-60 transition-all duration-500" />
+            </div>
+            <div className="px-6 py-4">
+              <h3 className="text-2xl font-bold text-white mb-2">Shop-Shop-Center</h3>
+              <p className="text-gray-300 text-sm mb-4">An e-commerce platform.</p>
+              <div className="flex justify-between">
+                <a href="https://github.com/kaihuan-huang/shop-shop-center" target="_blank" rel="noreferrer" className="px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition-all duration-300">GitHub</a>
+                <a href="/" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-800 transition-all duration-300">Live Demo</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
