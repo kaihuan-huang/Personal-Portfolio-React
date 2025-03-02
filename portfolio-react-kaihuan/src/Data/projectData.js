@@ -1,5 +1,5 @@
 
-import Wavebreak from '../assets/projects/Wavebreak.jpg'
+import Wavebreak from '../assets/projects/Wavebreak.png'
 import CodeApedia from '../assets/projects/CodeApedia.png'
 import TechOPedia from '../assets/projects/TechOPedia.png'
 import JsQuiz from '../assets/projects/quiz.jpg'
