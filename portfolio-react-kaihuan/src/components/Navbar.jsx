@@ -1,18 +1,21 @@
-import React, { useState, useContext } from "react";
-import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import React, { useState } from "react";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { ThemeContext } from '../context/ThemeContext';
+import {Link} from 'react-scroll'; //https://www.npmjs.com/package/react-scroll
+// import kaihuan from '../assets/kaihuan.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const { darkMode } = useContext(ThemeContext);
 
   return (
-      <div name='navbar' className={`fixed w-full h-[60px] flex justify-between items-center px-4 z-10 ${darkMode ? 'bg-[#0a192f] text-[#f9fafb]' : 'bg-[#ecf2fb] text-[#0a192f]'}`}>
+      <div name='navbar' className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#ecf2fb]" >
         <div>
           <div className="text-xl font-bold text-pink-600">KH</div>
         </div>
@@ -20,44 +23,44 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         <li> 
-          <ScrollLink to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             Home
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500}>
             About
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="skills" smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500}>
             Skills
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="experience" smooth={true} duration={500}>
+          <Link to="experience" smooth={true} duration={500}>
             Experience
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <RouterLink to="/blog" className="cursor-pointer">
+          <Link to="blog" smooth={true} duration={500}>
             Blog
-          </RouterLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="projects" smooth={true} duration={500}>
+          <Link to="projects" smooth={true} duration={500}>
             Projects
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500}>
             Contact
-          </ScrollLink>
+          </Link>
         </li>
         <li>
-          <ScrollLink to="resume" smooth={true} duration={500}>
+          <Link to="resume" smooth={true} duration={500}>
             Resume
-          </ScrollLink>
+          </Link>
         </li>
       </ul>
       {/* Hamburger */}
@@ -69,35 +72,33 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 w-full h-screen bg-[#ACEAF7]/80 backdrop-blur-sm flex flex-col justify-center items-center"
+            : "absolute top-0 w-full h-screen bg-[#ACEAF7] flex flex-col justify-center items-center"
         }>
-        <ul className="py-4">
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="home" smooth={true} duration={500}>
+        <ul>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
-          </ScrollLink></li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="about" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
-          </ScrollLink></li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="skills" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
-          </ScrollLink></li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="experience" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="experience" smooth={true} duration={500}>
             Experience
-          </ScrollLink></li>
-          <li className="py-3 text-2xl">
-            <RouterLink onClick={handleClick} to="/blog">
-              Blog
-            </RouterLink>
-          </li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="projects" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="blog" smooth={true} duration={500}>
+            Blog
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="projects" smooth={true} duration={500}>
             Projects
-          </ScrollLink></li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="contact" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
-          </ScrollLink></li>
-          <li className="py-3 text-2xl"><ScrollLink onClick={handleClick} to="resume" smooth={true} duration={500}>
+          </Link></li>
+          <li className="py-6 text-4xl"><Link onClick={handleClick} to="resume" smooth={true} duration={500}>
             Resume
-          </ScrollLink></li>
+          </Link></li>
         </ul>
       </div>
       {/* Social icons */}

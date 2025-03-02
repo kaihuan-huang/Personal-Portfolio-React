@@ -1,43 +1,32 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Blog from './components/Blog';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Resume from './components/Resume';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext';
-import ThemeToggle from './components/ThemeToggle';
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import Blog from "./components/Blog";
+import ThemeToggle from './components/ThemeToggle'; 
+import { ThemeContext } from './context/ThemeContext'; 
+import React, { useContext } from 'react';
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={
-              <>
-                <Home />
-                <About />
-                <Skills />
-                <Experience />
-                <Projects />
-                <Contact />
-                <Resume />
-              </>
-            } />
-            <Route path="/blog" element={<Blog />} />
-          </Routes>
-          <ThemeToggle />
-          <Footer />
-        </div>
-      </Router>
-    </ThemeProvider>
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Experience />
+      <Blog />
+      <Resume />
+      <Contact />
+      <Skills />
+      <ThemeToggle /> 
+      <Footer />
+    </div>
   );
 }
 

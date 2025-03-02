@@ -1,71 +1,27 @@
-
-import React, { useState, useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
+import React, { useState } from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const { darkMode } = useContext(ThemeContext);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Add your form submission logic here
-  };
-
-  return (
-    <div name="contact" className={`w-full h-screen ${darkMode ? 'bg-[#0a192f] text-gray-300' : 'bg-[#ecf2fb] text-gray-800'} flex justify-center items-center p-4`}>
-        <div className="flex flex-col max-w-[600px] w-full">
-            <div className="pb-8 flex flex-col justify-center w-full h-full items-center">
-                <p className="text-4xl font-bold inline border-b-4 border-pink-600">Contact</p>
-                <p className="py-4">Submit the form below or send me an email</p>
+    return (
+      <div name='contact' className='w-full min-h-screen text-gray-500 py-16 px-4'>
+        <div className='flex flex-col justify-center items-center w-full h-full'>
+          <div className='max-w-[1000px] w-full pb-8'>
+            <div className='text-center sm:text-left pb-8'>
+              <p className='text-4xl font-bold inline text-pink-600'>
+              Contact Me!
+              </p>
             </div>
-            <form onSubmit={handleSubmit} className="flex flex-col max-w-[600px] w-full">
-                <input 
-                    className={`p-2 ${darkMode ? 'bg-[#ccd6f6] text-gray-900' : 'bg-white text-gray-900'} rounded-md`}
-                    type="text" 
-                    placeholder="Name" 
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input 
-                    className={`my-4 p-2 ${darkMode ? 'bg-[#ccd6f6] text-gray-900' : 'bg-white text-gray-900'} rounded-md`}
-                    type="email" 
-                    placeholder="Email" 
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
-                <textarea 
-                    className={`p-2 ${darkMode ? 'bg-[#ccd6f6] text-gray-900' : 'bg-white text-gray-900'} rounded-md`}
-                    name="message" 
-                    rows="10" 
-                    placeholder="Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                ></textarea>
-                <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md">
-                    Let's Collaborate
-                </button>
+            <form action="https://getform.io/f/1c0e4abb-a618-4077-b6a2-37a87fff03ba" method="POST" className='flex flex-col max-w-[700px] w-full'>
+              <input className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' type="text" placeholder='Name' name='name' />
+              <input className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 my-4' type="email" placeholder='name@company.com' name='email' required/>
+              <textarea className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' name="message" rows="10" placeholder='Your message...'></textarea> 
+              <button className='text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mt-4 mb-2'>
+                Submit!
+              </button> 
             </form>
+          </div>
         </div>
-    </div>
-  );
+      </div>
+    );
 };
 
 export default Contact;
