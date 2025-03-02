@@ -15,20 +15,31 @@ export const ThemeProvider = ({ children }) => {
     if (savedTheme === 'dark') {
       setDarkMode(true);
       document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
   }, []);
 
   const toggleTheme = () => {
+    console.log("Toggle theme called, current state:", darkMode);
     setDarkMode(prevMode => {
       const newMode = !prevMode;
       
       if (newMode) {
         document.documentElement.classList.add('dark');
         localStorage.setItem('theme', 'dark');
+        console.log("Switching to dark mode");
       } else {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
+        console.log("Switching to light mode");
       }
+      
+      // Debug DOM state after update
+      setTimeout(() => {
+        console.log("HTML classes after update:", document.documentElement.className);
+        console.log("New theme state in localStorage:", localStorage.getItem('theme'));
+      }, 100);
       
       return newMode;
     });

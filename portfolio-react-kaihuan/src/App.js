@@ -13,9 +13,10 @@ import { ThemeProvider } from './context/ThemeContext';
 import React from 'react';
 
 function App() {
+  console.log("App rendering with ThemeProvider");
   return (
     <ThemeProvider>
-      <div>
+      <div className="app-container">
         <Navbar />
         <Home />
         <About />
